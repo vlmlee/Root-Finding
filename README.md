@@ -1,5 +1,13 @@
 # Root-Finding
-A javascript implementation of root finding using Newton-Raphson's method.
+A javascript implementation of root finding using Newton-Raphson's method. 
+
+To use, simply run the script with:
+
+```bash
+node newton-raphson.js
+```
+
+And enter in the values that you're prompt with.
 
 ## Description
 
