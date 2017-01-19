@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/vlmlee/Root-Finding#readme",
   "dependencies": {
+    "async": "^2.1.4",
     "chai": "^3.5.0",
     "mathjs": "^3.8.1",
     "mocha": "^3.2.0"
