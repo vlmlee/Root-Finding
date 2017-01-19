@@ -1,3 +1,4 @@
+'use strict';
 const parser = require('mathjs').parser(),
     readline = require('readline'),
     async = require('async');
