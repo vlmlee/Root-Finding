@@ -1,4 +1,7 @@
 # Root-Finding
+
+[![Build Status](https://travis-ci.org/vlmlee/Root-Finding.svg?branch=master)](https://travis-ci.org/vlmlee/Root-Finding)
+
 A javascript implementation of root finding using Newton-Raphson's method. Users are able to enter their own expressions through the console and they are parsed by the [mathjs parser](http://mathjs.org/index.html). 
 
 ## Installation
