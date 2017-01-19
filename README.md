@@ -1,13 +1,46 @@
 # Root-Finding
 A javascript implementation of root finding using Newton-Raphson's method. Users are able to enter their own expressions through the console and they are parsed by the [mathjs parser](http://mathjs.org/index.html). 
 
-To use, simply run the script with:
+## Installation
 
-```bash
-node newton-raphson.js
+You can install this package through npm:
+
+```
+npm install root-finding
 ```
 
-And enter in the values that you're prompt with.
+## Usage 
+
+For the command line version of the Newton-Raphson's algorithm, write this into a file:
+
+```
+const nr = require('root-finding');
+
+nr.newtonRaphson-CLI();
+```
+
+Then run the script with `node script.js` and enter in the values that you're prompt with.
+
+For the pure function, use:
+
+```
+/**
+* @param {number} guess - The initial x value to guess where the root is.
+* @param {number} increment - The delta x to be used for the next guess.
+* @param {number} iteration - The number of times to perform the algorithm.
+* @param {number} eps - The smallest f(x) value to be considered a root.
+* @param {Function} f - The expression whose root you want to solve.
+*/
+nr.newtonRaphson(guess, increment, iteration, eps, f);
+
+// Example
+
+function FofX(x) {
+	return x + 2; // Our expression is f(x) = x + 2.
+}
+
+nr.newtonRaphson(1, 0.1, 10, 0.001, FofX); // => returns -2.
+```
 
 ## Description
 
